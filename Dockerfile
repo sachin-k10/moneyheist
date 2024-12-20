@@ -32,9 +32,9 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 # Environment variables for database and Keycloak hostname
 ENV KC_DB=postgres
-ENV KC_DB_URL=${DB_URL}
-ENV KC_DB_USERNAME=${DB_USERNAME}
-ENV KC_DB_PASSWORD=${DB_PASSWORD}
+ENV KC_DB_URL=${KC_DB_URL}
+ENV KC_DB_USERNAME=${KC_DB_USERNAME}
+ENV KC_DB_PASSWORD=${KC_DB_PASSWORD}
 ENV KC_HOSTNAME=keycloak.localhost
 
 # Command to start Keycloak
