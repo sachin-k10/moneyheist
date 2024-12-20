@@ -38,4 +38,4 @@ ENV KC_DB_PASSWORD=${KC_DB_PASSWORD}
 ENV KC_HOSTNAME=keycloak.localhost
 
 # Command to start Keycloak
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", , "--optimized"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized"]
