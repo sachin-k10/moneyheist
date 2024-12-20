@@ -32,7 +32,7 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 # Environment variables for database and Keycloak hostname
 ENV KC_DB=postgres
-ENV KC_DB_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+ENV KC_DB_URL=${DB_URL}
 ENV KC_DB_USERNAME=${DB_USERNAME}
 ENV KC_DB_PASSWORD=${DB_PASSWORD}
 ENV KC_HOSTNAME=keycloak.localhost
